@@ -5,7 +5,9 @@ using System.Text;
 
 namespace MeuEstacionamento.Dominio
 {
-    class Vaga
+    public class Vaga : BaseNegocio
     {
+
+
     }
 }

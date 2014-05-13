@@ -1,0 +1,5 @@
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Infraestrutura\bin\Debug\Infraestrutura.dll
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Infraestrutura\bin\Debug\Infraestrutura.pdb
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Infraestrutura\obj\Debug\Infraestrutura.dll
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Infraestrutura\obj\Debug\Infraestrutura.pdb
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Infraestrutura\obj\Debug\Infraestrutura.csprojResolveAssemblyReference.cache

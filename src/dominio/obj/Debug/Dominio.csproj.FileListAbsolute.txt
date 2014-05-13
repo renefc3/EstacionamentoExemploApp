@@ -1,0 +1,7 @@
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\dominio\bin\Debug\Dominio.dll
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\dominio\bin\Debug\Dominio.pdb
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\dominio\obj\Debug\Dominio.dll
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\dominio\obj\Debug\Dominio.pdb
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\dominio\bin\Debug\Infraestrutura.dll
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\dominio\bin\Debug\Infraestrutura.pdb

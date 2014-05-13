@@ -1,0 +1,11 @@
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Tests\obj\Debug\Tests.csprojResolveAssemblyReference.cache
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Tests\bin\Debug\Tests.dll
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Tests\bin\Debug\Tests.pdb
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Tests\bin\Debug\Dominio.dll
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Tests\bin\Debug\Infraestrutura.dll
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Tests\bin\Debug\Moq.dll
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Tests\bin\Debug\Dominio.pdb
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Tests\bin\Debug\Infraestrutura.pdb
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Tests\bin\Debug\Moq.xml
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Tests\obj\Debug\Tests.dll
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Tests\obj\Debug\Tests.pdb
