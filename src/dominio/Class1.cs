@@ -8,30 +8,38 @@ using MeuEstacionamento.Infraestrutura;
 
 namespace MeuEstacionamento.Dominio
 {
-    public abstract class BaseNegocio
-    {
-        public virtual int Id { get; set; }
-    }
-
     public class Veiculo : BaseNegocio
     {
         public string Placa { get; set; }
         public string Fabricante { get; set; }
         public string Modelo { get; set; }
+        public string Ano { get; set; }
 
+        protected Veiculo()
+        {
+            
+        }
 
+        public Veiculo(string placa, string fabricante, string modelo, string ano)
+        {
+            Placa = placa;
+            Fabricante = fabricante;
+            Modelo = modelo;
+            Ano = ano;
+        }
     }
 
 
     public class Estacionamento : BaseNegocio
     {
-        public int QtdVaga { get; set; }
-
-        public ICollection<VagaVeiculo> Vagas { get; set; }
+        
+        public ICollection<VagaVeiculo> VagasUtilizadas { get; set; }
+        public ICollection<Vaga> Vagas { get; set; }
 
         public Estacionamento()
         {
-            Vagas = new Collection<VagaVeiculo>();
+            VagasUtilizadas = new Collection<VagaVeiculo>();
+            Vagas = new Collection<Vaga>();
         }
 
         public void Estacionar(Veiculo veiculo, Vaga vaga)
@@ -42,8 +50,11 @@ namespace MeuEstacionamento.Dominio
             if (vaga == null)
                 throw new ValorNullException("Selecione a vaga que será estacionado o veiculo");
 
-            var vagaAtual = Vagas.ToList().FirstOrDefault(x => x.Vaga.Id == vaga.Id);
-            var vagaDoVeiculoAtual = Vagas.ToList().FirstOrDefault(x => x.Veiculo.Id == veiculo.Id);
+            if (!Vagas.Contains(vaga))
+                throw new EstacionarException("Vaga selecionada não é do estacionado");
+
+            var vagaAtual = VagasUtilizadas.ToList().FirstOrDefault(x => x.Vaga != null && x.Vaga.Id == vaga.Id);
+            var vagaDoVeiculoAtual = VagasUtilizadas.ToList().FirstOrDefault(x => x.Veiculo!= null && x.Veiculo.Id == veiculo.Id);
 
             if (vagaDoVeiculoAtual != null)
                 throw new EstacionarException("O veiculo já está estacionado.");
@@ -51,19 +62,29 @@ namespace MeuEstacionamento.Dominio
             if (vagaAtual != null)
                 throw new EstacionarException("A vaga já possui um veiculo estacionado");
 
-
+            this.VagasUtilizadas.Add(new VagaVeiculo(this, vaga,veiculo));
         }
 
 
         public void Retirar(Veiculo veiculo)
         {
-
+            if (veiculo == null)
+                throw new ValorNullException("Selecione um veiculo para retirar");
+            
+            var vagaDoVeiculoAtual = VagasUtilizadas.ToList().Where(x => x.Veiculo != null && x.Veiculo.Id == veiculo.Id).ToList();
+            for (int i = 0; i < vagaDoVeiculoAtual.Count; i++)
+                VagasUtilizadas.Remove(vagaDoVeiculoAtual[i]);
         }
 
 
         public void Retirar(Vaga vaga)
         {
+            if (vaga == null)
+                throw new ValorNullException("Selecione a vaga que será liberada");
 
+            var vagaAtual = VagasUtilizadas.ToList().Where(x => x.Vaga != null && x.Vaga.Id == vaga.Id).ToList();
+            for (int i = 0; i < vagaAtual.Count; i++)
+                VagasUtilizadas.Remove(vagaAtual[i]);
         }
 
     }
@@ -78,6 +99,10 @@ namespace MeuEstacionamento.Dominio
 
         public DateTime? DataSaida { get; set; }
 
+        protected VagaVeiculo()
+        {
+
+        }
         public VagaVeiculo(Estacionamento estacionamento, Vaga vaga, Veiculo veiculo)
         {
             Estacionamento = estacionamento;

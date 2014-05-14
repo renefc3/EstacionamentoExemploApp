@@ -1,0 +1,5 @@
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Servico\bin\Debug\Servico.dll
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Servico\bin\Debug\Servico.pdb
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Servico\obj\Debug\Servico.csprojResolveAssemblyReference.cache
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Servico\obj\Debug\Servico.dll
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Servico\obj\Debug\Servico.pdb

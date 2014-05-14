@@ -14,23 +14,4 @@ namespace MeuEstacionamento.Infraestrutura
 
         }
     }
-
-    public class ValorNullException : EstacionamentoException
-    {
-        public ValorNullException(string message)
-            : base(message)
-        {
-
-        }
-    }
-    public class EstacionarException : EstacionamentoException
-    {
-        public EstacionarException(string message)
-            : base(message)
-        {
-
-        }
-    }
-
-
 }

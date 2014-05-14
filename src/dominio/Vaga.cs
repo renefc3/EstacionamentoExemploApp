@@ -8,6 +8,7 @@ namespace MeuEstacionamento.Dominio
     public class Vaga : BaseNegocio
     {
 
+        
 
     }
 }

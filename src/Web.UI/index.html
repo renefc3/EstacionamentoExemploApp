@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html ng-app="meuEstacionamento">
+<head>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <title></title>
+
+</head>
+<body>
+    <div>
+        <div ng-view></div>
+    </div>
+
+    <script src="js/lib/angular/angular.min.js"></script>
+    <script src="js/lib/angular/angular-route.min.js"></script>
+    <script src="js/lib/jquery/jquery-2.1.1.min.js"></script>
+    <script src="js/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="js/app/routes.js"></script>
+
+    <div ng-repeat="jsaa in $route.current.JsFiles">
+        <script src="{{jsaa}}"></script>
+    </div>
+
+</body>
+</html>

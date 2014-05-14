@@ -1,0 +1,14 @@
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Web.UI\bin\Web.UI.dll.config
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Web.UI\bin\Web.UI.dll
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Web.UI\bin\Web.UI.pdb
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Web.UI\bin\Newtonsoft.Json.dll
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Web.UI\bin\System.Net.Http.Formatting.dll
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Web.UI\bin\System.Web.Http.dll
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Web.UI\bin\System.Web.Http.WebHost.dll
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Web.UI\bin\Newtonsoft.Json.xml
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Web.UI\bin\System.Net.Http.Formatting.xml
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Web.UI\bin\System.Web.Http.xml
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Web.UI\bin\System.Web.Http.WebHost.xml
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Web.UI\obj\Debug\Web.UI.csprojResolveAssemblyReference.cache
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Web.UI\obj\Debug\Web.UI.dll
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Web.UI\obj\Debug\Web.UI.pdb
