@@ -12,3 +12,5 @@ D:\Projetos\GitHub\EstacionamentoExemploApp\src\Web.UI\bin\System.Web.Http.WebHo
 D:\Projetos\GitHub\EstacionamentoExemploApp\src\Web.UI\obj\Debug\Web.UI.csprojResolveAssemblyReference.cache
 D:\Projetos\GitHub\EstacionamentoExemploApp\src\Web.UI\obj\Debug\Web.UI.dll
 D:\Projetos\GitHub\EstacionamentoExemploApp\src\Web.UI\obj\Debug\Web.UI.pdb
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Web.UI\bin\Infraestrutura.dll
+D:\Projetos\GitHub\EstacionamentoExemploApp\src\Web.UI\bin\Infraestrutura.pdb

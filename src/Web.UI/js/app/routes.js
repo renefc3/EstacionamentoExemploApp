@@ -6,9 +6,22 @@ routerApp.config(['$routeProvider', '$locationProvider', function ($routeProvide
     $routeProvider
         .when('/', {
             templateUrl: 'views/home.html',
-            controller: 'HomeCtrl',
-            JsFiles: ['/js/app/controllers/HomeCtrl.js']
-        });
+            controller: 'HomeCtrl'
+        })
+        .when('/estacionar', {
+            templateUrl: 'views/estacionar/estacionar-veiculo.html',
+            controller: 'EstacionarCtrl'
+        })
+
+        .when('/retirar', {
+            templateUrl: 'views/estacionar/retirar-veiculo.html',
+            controller: 'RetirarCtrl'
+        })
+        .when('/estacionamento', {
+                templateUrl: 'views/estacionamento/busca.html',
+                controller: 'EstacionamentoBuscaCtrl'
+        })
+    ;
 
 
 }]);

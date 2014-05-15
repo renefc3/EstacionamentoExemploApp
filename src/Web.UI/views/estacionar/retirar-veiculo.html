@@ -1,0 +1,10 @@
+﻿<div class="well well-lg" style="max-width: 400px">
+    <select class="form-control" ng-model="estacionar.idEstacionamento" ng-options="estacionamento.Id as estacionamento.Nome for estacionamento in estacionar.estacionamentos">
+        <option>Selecione o Estacionamento</option>
+    </select>
+    
+    <br />
+    <input type="text" class="form-control" placeholder="Placa" ng-model="estacionar.placa">
+    <br />
+    <input type="text" class="form-control" placeholder="Vaga" ng-model="estacionar.vaga">
+</div>

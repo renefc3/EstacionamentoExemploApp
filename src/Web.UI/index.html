@@ -3,6 +3,7 @@
 <head>
 
     <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/estacionamento.css" rel="stylesheet" />
     <title></title>
 
 </head>
@@ -14,12 +15,10 @@
     <script src="js/lib/angular/angular.min.js"></script>
     <script src="js/lib/angular/angular-route.min.js"></script>
     <script src="js/lib/jquery/jquery-2.1.1.min.js"></script>
+    <script src="js/lib/jquery/jquery.inputmask.js"></script>
     <script src="js/lib/bootstrap/bootstrap.min.js"></script>
     <script src="js/app/routes.js"></script>
-
-    <div ng-repeat="jsaa in $route.current.JsFiles">
-        <script src="{{jsaa}}"></script>
-    </div>
+    <script src="js/app/controllers/HomeCtrl.js"></script>
 
 </body>
 </html>

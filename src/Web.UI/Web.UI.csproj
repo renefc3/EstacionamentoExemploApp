@@ -76,10 +76,14 @@
     <Content Include="css\bootstrap-theme.min.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\estacionamento.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
+    <Content Include="js\app\controllers\EstacionamentoCtrl.js" />
+    <Content Include="js\app\controllers\EstacionarCtrl.js" />
     <Content Include="js\app\controllers\HomeCtrl.js" />
+    <Content Include="js\app\controllers\RetirarCtrl.js" />
     <Content Include="js\app\routes.js" />
     <Content Include="js\lib\angular\angular-animate.js" />
     <Content Include="js\lib\angular\angular-animate.min.js" />
@@ -349,11 +353,19 @@
     <Content Include="js\lib\bootstrap\bootstrap.js" />
     <Content Include="js\lib\bootstrap\bootstrap.min.js" />
     <Content Include="js\lib\jquery\jquery-2.1.1.min.js" />
+    <Content Include="js\lib\jquery\jquery.inputmask.js" />
+    <Content Include="views\estacionamento\busca.html" />
+    <Content Include="views\estacionamento\cadastro.html" />
+    <Content Include="views\estacionar\estacionar-veiculo.html" />
+    <Content Include="views\estacionar\retirar-veiculo.html" />
     <Content Include="views\home.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\CarroController.cs" />
+    <Compile Include="Controllers\EstacionamentoController.cs" />
+    <Compile Include="Controllers\EstacionarController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -383,9 +395,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="js\app\services\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Infraestrutura\Infraestrutura.csproj">
+      <Project>{504D2143-70EB-4CA6-9A48-8CAB2023385A}</Project>
+      <Name>Infraestrutura</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

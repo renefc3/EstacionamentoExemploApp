@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DtoEstacionar.cs" />
     <Compile Include="EstacionamentoException.cs" />
     <Compile Include="EstacionarException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
